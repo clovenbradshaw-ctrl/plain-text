@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-24T18:29:14.207982-05:00",
+  "updated_at": "2026-05-24T18:41:33.515075-05:00",
   "def": {
     "discovery_interval_hours": 20,
     "pending_budget": 50,
@@ -22,7 +22,7 @@
     }
   },
   "eva": {
-    "discovery_last": "2026-05-24T18:29:14.207982-05:00",
+    "discovery_last": "2026-05-24T18:41:33.515075-05:00",
     "backfill_cursor": "2026-05-14",
     "backfill_target": "2020-01-01",
     "consecutive_clean": 1,
@@ -31,18 +31,18 @@
       "hits": 0
     },
     "enrichment_stats": {
-      "attempted": 0,
-      "succeeded": 0
+      "attempted": 15,
+      "succeeded": 15
     },
-    "last_cycle": "2026-05-24T18:29:14.207982-05:00",
-    "total_cases": 388,
-    "total_pending": 388,
-    "total_enriched": 0,
+    "last_cycle": "2026-05-24T18:41:33.515075-05:00",
+    "total_cases": 459,
+    "total_pending": 459,
+    "total_enriched": 15,
     "errors_this_cycle": 0
   },
   "history": [
     {
-      "ts": "2026-05-24T18:29:13.402188-05:00",
+      "ts": "2026-05-24T18:41:32.657386-05:00",
       "op": "DEF",
       "params": {
         "discovery_interval_hours": 20,
@@ -66,14 +66,14 @@
       }
     },
     {
-      "ts": "2026-05-24T18:29:14.207982-05:00",
+      "ts": "2026-05-24T18:41:33.515075-05:00",
       "op": "EVA",
-      "new": 388,
+      "new": 459,
       "changed": 0,
       "checked": 0,
-      "enriched": 0,
+      "enriched": 15,
       "errors": 0,
-      "elapsed": 109
+      "elapsed": 814
     }
   ]
 }
