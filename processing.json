@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-24T19:26:46.131853-05:00",
+  "updated_at": "2026-05-24T19:42:08.022667-05:00",
   "def": {
     "discovery_interval_hours": 20,
     "pending_budget": 50,
@@ -12,7 +12,7 @@
     ],
     "filing_density": {
       "default": 40,
-      "2026-05": 43.6
+      "2026-05": 17.7
     },
     "waits": {
       "short": 500,
@@ -23,21 +23,21 @@
   },
   "eva": {
     "discovery_last": "2026-05-24T18:41:33.515075-05:00",
-    "backfill_cursor": "2026-05-07",
+    "backfill_cursor": "2026-04-30",
     "backfill_target": "2020-01-01",
-    "consecutive_clean": 2,
+    "consecutive_clean": 3,
     "pending_stats": {
       "checks": 3,
       "hits": 0
     },
     "enrichment_stats": {
-      "attempted": 30,
-      "succeeded": 30
+      "attempted": 45,
+      "succeeded": 45
     },
-    "last_cycle": "2026-05-24T19:26:46.131853-05:00",
-    "total_cases": 376,
-    "total_pending": 376,
-    "total_enriched": 22,
+    "last_cycle": "2026-05-24T19:42:08.022667-05:00",
+    "total_cases": 500,
+    "total_pending": 500,
+    "total_enriched": 37,
     "errors_this_cycle": 0,
     "job2": {
       "cycle_attempts": 0,
@@ -90,6 +90,16 @@
       "enriched": 15,
       "errors": 0,
       "elapsed": 911
+    },
+    {
+      "ts": "2026-05-24T19:42:08.022667-05:00",
+      "op": "EVA",
+      "new": 124,
+      "changed": 0,
+      "checked": 0,
+      "enriched": 15,
+      "errors": 0,
+      "elapsed": 780
     }
   ]
 }
