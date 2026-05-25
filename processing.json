@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-24T19:55:19.384682-05:00",
+  "updated_at": "2026-05-24T20:08:59.007780-05:00",
   "def": {
     "discovery_interval_hours": 20,
     "pending_budget": 50,
@@ -13,39 +13,65 @@
     "filing_density": {
       "default": 40,
       "2026-05": 17.7,
-      "2026-04": 38.9
+      "2026-04": 51.4
     },
     "waits": {
-      "short": 500,
-      "medium": 2000,
-      "long": 4000,
-      "grid": 1500
+      "short": 425,
+      "medium": 1700,
+      "long": 3400,
+      "grid": 1275
     }
   },
   "eva": {
     "discovery_last": "2026-05-24T18:41:33.515075-05:00",
-    "backfill_cursor": "2026-04-23",
+    "backfill_cursor": "2026-04-16",
     "backfill_target": "2020-01-01",
-    "consecutive_clean": 4,
+    "consecutive_clean": 5,
     "pending_stats": {
       "checks": 3,
       "hits": 0
     },
     "enrichment_stats": {
-      "attempted": 60,
-      "succeeded": 60
+      "attempted": 75,
+      "succeeded": 75
     },
-    "last_cycle": "2026-05-24T19:55:19.384682-05:00",
-    "total_cases": 772,
-    "total_pending": 772,
-    "total_enriched": 52,
+    "last_cycle": "2026-05-24T20:08:59.007780-05:00",
+    "total_cases": 1132,
+    "total_pending": 1132,
+    "total_enriched": 67,
     "errors_this_cycle": 0,
     "job2": {
       "cycle_attempts": 0,
       "fail_streak": 1,
       "cycle_successes": 0
     },
-    "last_enriched_count": 15
+    "last_enriched_count": 15,
+    "_pre_rec_snapshot": {
+      "def_snapshot": {
+        "discovery_interval_hours": 20,
+        "pending_budget": 50,
+        "enrichment_budget": 15,
+        "backfill_window_days": 3,
+        "target_grid_results": 700,
+        "terminal_statuses": [
+          "DISMISSED",
+          "NONSUIT"
+        ],
+        "filing_density": {
+          "default": 40,
+          "2026-05": 17.7,
+          "2026-04": 51.4
+        },
+        "waits": {
+          "short": 425,
+          "medium": 1700,
+          "long": 3400,
+          "grid": 1275
+        }
+      },
+      "errors_at_snapshot": 0,
+      "enriched_at_snapshot": 15
+    }
   },
   "history": [
     {
@@ -111,6 +137,49 @@
       "enriched": 15,
       "errors": 0,
       "elapsed": 809
+    },
+    {
+      "ts": "2026-05-24T20:08:59.007780-05:00",
+      "op": "EVA",
+      "new": 360,
+      "changed": 0,
+      "checked": 0,
+      "enriched": 15,
+      "errors": 0,
+      "elapsed": 821
+    },
+    {
+      "ts": "2026-05-24T20:22:40.018885-05:00",
+      "op": "REC",
+      "adjustments": [
+        "clean x5: sped up"
+      ]
+    },
+    {
+      "ts": "2026-05-24T20:22:40.018885-05:00",
+      "op": "DEF",
+      "params": {
+        "discovery_interval_hours": 20,
+        "pending_budget": 50,
+        "enrichment_budget": 15,
+        "backfill_window_days": 3,
+        "target_grid_results": 700,
+        "terminal_statuses": [
+          "DISMISSED",
+          "NONSUIT"
+        ],
+        "filing_density": {
+          "default": 40,
+          "2026-05": 17.7,
+          "2026-04": 51.4
+        },
+        "waits": {
+          "short": 425,
+          "medium": 1700,
+          "long": 3400,
+          "grid": 1275
+        }
+      }
     }
   ]
 }
