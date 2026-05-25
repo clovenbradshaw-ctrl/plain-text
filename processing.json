@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-24T22:05:07.538434-05:00",
+  "updated_at": "2026-05-24T22:15:33.974820-05:00",
   "def": {
     "discovery_interval_hours": 20,
     "pending_budget": 50,
@@ -14,7 +14,8 @@
       "default": 40,
       "2026-05": 17.7,
       "2026-04": 32.7,
-      "2026-03": 33.9
+      "2026-03": 33.9,
+      "2026-02": 58
     },
     "waits": {
       "short": 200,
@@ -25,21 +26,21 @@
   },
   "eva": {
     "discovery_last": "2026-05-24T18:41:33.515075-05:00",
-    "backfill_cursor": "2026-02-26",
+    "backfill_cursor": "2026-02-19",
     "backfill_target": "2020-01-01",
-    "consecutive_clean": 12,
+    "consecutive_clean": 13,
     "pending_stats": {
       "checks": 3,
       "hits": 0
     },
     "enrichment_stats": {
-      "attempted": 180,
-      "succeeded": 180
+      "attempted": 195,
+      "succeeded": 195
     },
-    "last_cycle": "2026-05-24T22:05:07.538434-05:00",
-    "total_cases": 2859,
-    "total_pending": 2859,
-    "total_enriched": 207,
+    "last_cycle": "2026-05-24T22:15:33.974820-05:00",
+    "total_cases": 3265,
+    "total_pending": 3265,
+    "total_enriched": 222,
     "errors_this_cycle": 0,
     "job2": {
       "cycle_attempts": 0,
@@ -48,18 +49,18 @@
     },
     "last_enriched_count": 15,
     "geocode": {
-      "success": 196,
+      "success": 210,
       "unfindable": 0,
-      "pending": 11,
-      "census": 15,
-      "nominatim": 0
+      "pending": 12,
+      "census": 28,
+      "nominatim": 1
     },
     "_geo_prev": {
-      "success": 196,
+      "success": 210,
       "unfindable": 0,
-      "pending": 11,
-      "census": 15,
-      "nominatim": 0
+      "pending": 12,
+      "census": 28,
+      "nominatim": 1
     },
     "_pre_rec_snapshot": {
       "def_snapshot": {
@@ -76,7 +77,8 @@
           "default": 40,
           "2026-05": 17.7,
           "2026-04": 32.7,
-          "2026-03": 33.9
+          "2026-03": 33.9,
+          "2026-02": 58
         },
         "waits": {
           "short": 200,
@@ -494,6 +496,52 @@
           "2026-05": 17.7,
           "2026-04": 32.7,
           "2026-03": 33.9
+        },
+        "waits": {
+          "short": 200,
+          "medium": 800,
+          "long": 1500,
+          "grid": 800
+        }
+      }
+    },
+    {
+      "ts": "2026-05-24T22:15:33.974820-05:00",
+      "op": "EVA",
+      "new": 406,
+      "changed": 0,
+      "checked": 0,
+      "enriched": 15,
+      "errors": 0,
+      "elapsed": 526
+    },
+    {
+      "ts": "2026-05-24T22:24:20.065128-05:00",
+      "op": "REC",
+      "adjustments": [
+        "clean x13: sped up",
+        "geocode: 210 ok, 0 unfindable, 12 pending (census 13%)"
+      ]
+    },
+    {
+      "ts": "2026-05-24T22:24:20.065128-05:00",
+      "op": "DEF",
+      "params": {
+        "discovery_interval_hours": 20,
+        "pending_budget": 50,
+        "enrichment_budget": 15,
+        "backfill_window_days": 3,
+        "target_grid_results": 700,
+        "terminal_statuses": [
+          "DISMISSED",
+          "NONSUIT"
+        ],
+        "filing_density": {
+          "default": 40,
+          "2026-05": 17.7,
+          "2026-04": 32.7,
+          "2026-03": 33.9,
+          "2026-02": 58
         },
         "waits": {
           "short": 200,
