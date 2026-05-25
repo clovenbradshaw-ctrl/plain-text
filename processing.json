@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-24T21:06:43.263054-05:00",
+  "updated_at": "2026-05-24T21:16:00.426669-05:00",
   "def": {
     "discovery_interval_hours": 20,
     "pending_budget": 50,
@@ -14,32 +14,32 @@
       "default": 40,
       "2026-05": 17.7,
       "2026-04": 32.7,
-      "2026-03": 48.1
+      "2026-03": 28.7
     },
     "waits": {
       "short": 200,
       "medium": 800,
-      "long": 1507,
+      "long": 1500,
       "grid": 800
     }
   },
   "eva": {
     "discovery_last": "2026-05-24T18:41:33.515075-05:00",
-    "backfill_cursor": "2026-03-12",
+    "backfill_cursor": "2026-03-05",
     "backfill_target": "2020-01-01",
-    "consecutive_clean": 10,
+    "consecutive_clean": 11,
     "pending_stats": {
       "checks": 3,
       "hits": 0
     },
     "enrichment_stats": {
-      "attempted": 150,
-      "succeeded": 150
+      "attempted": 165,
+      "succeeded": 165
     },
-    "last_cycle": "2026-05-24T21:06:43.263054-05:00",
-    "total_cases": 2421,
-    "total_pending": 2421,
-    "total_enriched": 142,
+    "last_cycle": "2026-05-24T21:16:00.426669-05:00",
+    "total_cases": 2622,
+    "total_pending": 2622,
+    "total_enriched": 157,
     "errors_this_cycle": 0,
     "job2": {
       "cycle_attempts": 0,
@@ -62,12 +62,12 @@
           "default": 40,
           "2026-05": 17.7,
           "2026-04": 32.7,
-          "2026-03": 48.1
+          "2026-03": 28.7
         },
         "waits": {
           "short": 200,
           "medium": 800,
-          "long": 1507,
+          "long": 1500,
           "grid": 800
         }
       },
@@ -396,6 +396,50 @@
           "short": 200,
           "medium": 800,
           "long": 1507,
+          "grid": 800
+        }
+      }
+    },
+    {
+      "ts": "2026-05-24T21:16:00.426669-05:00",
+      "op": "EVA",
+      "new": 201,
+      "changed": 0,
+      "checked": 0,
+      "enriched": 15,
+      "errors": 0,
+      "elapsed": 556
+    },
+    {
+      "ts": "2026-05-24T21:25:16.203210-05:00",
+      "op": "REC",
+      "adjustments": [
+        "clean x11: sped up"
+      ]
+    },
+    {
+      "ts": "2026-05-24T21:25:16.203210-05:00",
+      "op": "DEF",
+      "params": {
+        "discovery_interval_hours": 20,
+        "pending_budget": 50,
+        "enrichment_budget": 15,
+        "backfill_window_days": 3,
+        "target_grid_results": 700,
+        "terminal_statuses": [
+          "DISMISSED",
+          "NONSUIT"
+        ],
+        "filing_density": {
+          "default": 40,
+          "2026-05": 17.7,
+          "2026-04": 32.7,
+          "2026-03": 28.7
+        },
+        "waits": {
+          "short": 200,
+          "medium": 800,
+          "long": 1500,
           "grid": 800
         }
       }
