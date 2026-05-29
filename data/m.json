@@ -1,0 +1,1 @@
+{"cipher": "AES-256-GCM", "kdf": "PBKDF2-HMAC-SHA256", "iterations": 200000, "salt_b64": "gXAWlupd6aGvq9IW0C5hfA==", "line": "base64(nonce:12 | ciphertext+tag); key=PBKDF2(password, salt)"}
